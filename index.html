@@ -222,7 +222,46 @@
           <p class="muted" style="margin-top:6px;">We’ll text/call within business hours to confirm.</p>
 
           <!-- Replace action with your CRM endpoint (Spark, Mailchimp, Formspree, etc.) -->
-          <form method="post" action="#" onsubmit="return fakeSubmit(event)">
+          <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
+
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required placeholder="Your name" />
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required placeholder="you@email.com" />
+
+  <label for="phone">Mobile phone</label>
+  <input id="phone" name="phone" type="tel" required placeholder="(904) 555-0123" />
+
+  <label for="who">I’m interested in</label>
+  <select id="who" name="interest" required>
+    <option value="">Select one…</option>
+    <option>Kids (5+)</option>
+    <option>Teen / Family</option>
+    <option>Adults</option>
+    <option>Not sure yet</option>
+  </select>
+
+  <label for="time">Best time to contact</label>
+  <select id="time" name="best_time" required>
+    <option value="">Select one…</option>
+    <option>ASAP</option>
+    <option>Afternoons</option>
+    <option>Evenings</option>
+  </select>
+
+  <label for="notes">Goals (optional)</label>
+  <textarea id="notes" name="notes" rows="3" placeholder="Confidence, fitness, discipline, self-defense…"></textarea>
+
+  <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+    <button class="btn primary" type="submit">Book My Free Intro</button>
+    <a class="btn ghost" href="tel:+19044873016">Or call now</a>
+  </div>
+
+  <small class="kicker">We’ll contact you within business hours.</small>
+</form>
+
             <label for="name">Name</label>
             <input id="name" name="name" autocomplete="name" required placeholder="Your name" />
 
