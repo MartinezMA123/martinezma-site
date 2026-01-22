@@ -1,0 +1,517 @@
+<!-- =========================
+OPTION 1 (LIGHT / CLEAN / CORPORATE)
+Save as: index-light.html (or index.html)
+Netlify Forms enabled: form name="contact"
+========================= -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Martinez Martial Arts | Fleming Island, FL</title>
+  <meta name="description" content="Martinez Martial Arts in Fleming Island, FL. Little Dragons (3-5), Kids (6-12), Teens & Adults (13+), and Kickboxing for Teens & Adults. Book a free intro class." />
+  <meta name="theme-color" content="#ffffff" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SportsActivityLocation",
+    "name":"Martinez Martial Arts",
+    "url":"https://www.martinezma.com/",
+    "telephone":"+1-904-487-3016",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"4479-5 US 17",
+      "addressLocality":"Fleming Island",
+      "addressRegion":"FL",
+      "postalCode":"32003",
+      "addressCountry":"US"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --ink:#0f172a;
+      --muted:#475569;
+      --line:rgba(15,23,42,.12);
+      --card:#ffffff;
+      --soft:#f1f5f9;
+      --soft2:#f8fafc;
+      --radius:18px;
+      --max:1140px;
+      --shadow:0 16px 42px rgba(2,6,23,.10);
+
+      --brand:#2563eb;   /* primary */
+      --brand2:#16a34a;  /* accent */
+      --brand3:#f97316;  /* accent */
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--ink);
+      background:
+        radial-gradient(1100px 620px at 20% -10%, rgba(37,99,235,.10), transparent 62%),
+        radial-gradient(900px 560px at 90% 10%, rgba(22,163,74,.10), transparent 62%),
+        var(--bg);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px;}
+
+    header{
+      position:sticky; top:0; z-index:40;
+      background:rgba(255,255,255,.88);
+      backdrop-filter: blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0; gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:1000; letter-spacing:.3px;
+    }
+    .logo{
+      width:42px; height:42px; border-radius:14px;
+      background:linear-gradient(135deg, rgba(37,99,235,.95), rgba(22,163,74,.85));
+      display:grid; place-items:center; color:white;
+      box-shadow:0 10px 24px rgba(37,99,235,.18);
+    }
+    .brand small{display:block; color:var(--muted); font-weight:900; letter-spacing:.7px; font-size:12px; margin-top:2px}
+
+    .links{display:flex; gap:16px; align-items:center; flex-wrap:wrap;}
+    .links a{color:var(--muted); font-weight:900; font-size:13px}
+    .links a:hover{color:var(--ink)}
+    .cta{display:flex; gap:10px; align-items:center;}
+    .mobileOnly{display:none}
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px; border-radius:14px;
+      border:1px solid var(--line);
+      background:var(--card);
+      color:var(--ink);
+      font-weight:1000;
+      cursor:pointer;
+      transition:transform .08s ease, box-shadow .15s ease;
+    }
+    .btn:hover{transform:translateY(-1px); box-shadow:0 10px 22px rgba(2,6,23,.08)}
+    .btn.primary{
+      border-color:transparent;
+      background:linear-gradient(135deg, var(--brand), #60a5fa);
+      color:white;
+      box-shadow:0 14px 28px rgba(37,99,235,.22);
+    }
+    .btn.alt{
+      border-color:transparent;
+      background:linear-gradient(135deg, var(--brand2), #86efac);
+      color:#06210f;
+      box-shadow:0 14px 28px rgba(22,163,74,.18);
+    }
+
+    .pill{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(15,23,42,.03);
+      color:var(--muted);
+      font-weight:900; font-size:13px;
+    }
+
+    /* HERO */
+    .hero{padding:44px 0 18px;}
+    .grid{display:grid; grid-template-columns:1.12fr .88fr; gap:16px; align-items:start;}
+    h1{margin:14px 0 10px; font-size:44px; line-height:1.05; letter-spacing:-.9px;}
+    .sub{margin:0 0 14px; font-size:17px; color:var(--muted);}
+    .bar{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .pad{padding:18px;}
+
+    .heroMedia{position:relative; overflow:hidden; min-height:420px;}
+    .heroMedia img{width:100%; height:100%; object-fit:cover; display:block;}
+    .heroMedia .overlay{
+      position:absolute; inset:0;
+      background:linear-gradient(180deg, rgba(255,255,255,.0), rgba(255,255,255,.0));
+    }
+    .heroBadges{
+      position:absolute; left:14px; bottom:14px; display:flex; gap:10px; flex-wrap:wrap;
+    }
+    .badge{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:999px;
+      background:rgba(255,255,255,.92);
+      border:1px solid rgba(15,23,42,.12);
+      font-weight:1000; font-size:12px; color:var(--ink);
+    }
+
+    /* Finder (KarateAmerica-like “quick start”) */
+    .finder{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap; align-items:center;}
+    .finder input{
+      flex:1 1 220px;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:var(--soft2);
+      color:var(--ink);
+      outline:none;
+      font-weight:900;
+    }
+    .fineprint{font-size:13px; color:var(--muted); margin-top:10px;}
+
+    section{padding:30px 0;}
+    h2{margin:0 0 10px; font-size:28px; letter-spacing:-.3px;}
+    .muted{color:var(--muted);}
+
+    .stats{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:14px;}
+    .stat{
+      padding:14px; border-radius:16px; border:1px solid var(--line);
+      background:linear-gradient(180deg, var(--soft2), var(--card));
+    }
+    .stat b{display:block; font-size:18px;}
+    .stat span{color:var(--muted); font-size:13px;}
+
+    .cards{display:grid; grid-template-columns:repeat(4, 1fr); gap:12px; margin-top:14px;}
+    .program{padding:16px;}
+    .program h3{margin:10px 0 6px; font-size:16px;}
+    .program p{margin:0; color:var(--muted); font-size:14px; line-height:1.55;}
+    .tag{display:inline-flex; gap:8px; align-items:center; font-weight:1000; font-size:13px;}
+    .tag i{width:10px; height:10px; border-radius:999px; display:inline-block; background:var(--brand);}
+    .tag.kids i{background:var(--brand2);}
+    .tag.ta i{background:var(--brand);}
+    .tag.kb i{background:var(--brand3);}
+
+    .two{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;}
+
+    .list{display:grid; gap:10px; margin-top:12px;}
+    .li{
+      display:flex; gap:10px; align-items:flex-start;
+      padding:12px; border-radius:14px;
+      border:1px solid var(--line);
+      background:var(--soft2);
+    }
+    .dot{width:10px; height:10px; border-radius:999px; background:var(--brand2); margin-top:6px; flex:0 0 auto;}
+
+    /* Form */
+    form label{display:block; font-size:13px; color:var(--muted); margin:10px 0 6px; font-weight:1000;}
+    form input, form select, form textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:var(--soft2);
+      color:var(--ink);
+      outline:none;
+      font-weight:800;
+    }
+    form textarea{resize:vertical; min-height:96px;}
+    .formRow{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+    .formActions{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+    .hint{margin-top:10px; font-size:13px; color:var(--muted);}
+
+    /* Testimonials */
+    .testimonials{display:grid; grid-template-columns:repeat(3, 1fr); gap:12px; margin-top:14px;}
+    .quote{padding:16px; background:linear-gradient(180deg, var(--soft2), var(--card));}
+    .stars{letter-spacing:1px; font-weight:1000;}
+    .who{margin-top:10px; color:var(--muted); font-weight:1000; font-size:13px;}
+
+    /* Location */
+    .map{border:0; width:100%; height:320px; border-radius:var(--radius);}
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:22px 0;
+      color:var(--muted);
+      background:rgba(15,23,42,.02);
+    }
+    .foot{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+    .miniLinks{display:flex; gap:14px; flex-wrap:wrap;}
+    .miniLinks a{color:var(--muted); font-weight:1000; font-size:13px;}
+    .miniLinks a:hover{color:var(--ink);}
+
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr;}
+      .heroMedia{min-height:280px;}
+      .cards{grid-template-columns:1fr 1fr;}
+      .two{grid-template-columns:1fr;}
+      .stats{grid-template-columns:1fr;}
+      h1{font-size:36px;}
+      .links{display:none;}
+      .mobileOnly{display:inline-flex;}
+    }
+    @media (max-width: 520px){
+      .cards{grid-template-columns:1fr;}
+      .formRow{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Martinez Martial Arts home">
+          <div class="logo" aria-hidden="true">M</div>
+          <div>
+            <div>MARTINEZ MARTIAL ARTS</div>
+            <small>FLEMING ISLAND, FL</small>
+          </div>
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="#programs">Programs</a>
+          <a href="#why">Why Us</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#location">Location</a>
+          <a href="#lead">Get Started</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn mobileOnly" href="tel:+19044873016">Call</a>
+          <a class="btn primary" href="#lead">Free Intro Class</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="grid">
+          <div>
+            <span class="pill">📍 4479-5 US 17 • Fleming Island, FL • (904) 487-3016</span>
+            <h1>Build Confidence, Discipline & Real Skills</h1>
+            <p class="sub">
+              Programs for ages 3+ through adults—plus kickboxing for teens and adults.
+              Try a free intro class and we’ll match you to the best program.
+            </p>
+
+            <div class="bar">
+              <a class="btn primary" href="#lead">Book a Free Intro</a>
+              <a class="btn" href="tel:+19044873016">Call (904) 487-3016</a>
+              <a class="btn alt" href="#programs">View Programs</a>
+            </div>
+
+            <div class="card pad" style="margin-top:16px; background:linear-gradient(180deg, #ffffff, #f8fafc);">
+              <div class="pill">Quick start (optional)</div>
+              <div class="finder">
+                <input id="zipLight" type="text" inputmode="numeric" placeholder="Enter ZIP code (optional)" aria-label="Zip code" />
+                <a class="btn primary" href="#lead" onclick="prefillZipLight()">Get Started</a>
+              </div>
+              <div class="fineprint">Skip ZIP if you want—book your intro and we’ll confirm the right class time.</div>
+            </div>
+
+            <div class="stats">
+              <div class="stat"><b>Little Dragons</b><span>Ages 3–5 • focus • coordination</span></div>
+              <div class="stat"><b>Kids Martial Arts</b><span>Ages 6–12 • confidence • discipline</span></div>
+              <div class="stat"><b>Teens & Adults</b><span>13+ • self-defense • fitness</span></div>
+            </div>
+          </div>
+
+          <div class="card heroMedia" aria-label="Placeholder hero image">
+            <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1600&q=80" alt="Martial arts class training" />
+            <div class="overlay"></div>
+            <div class="heroBadges">
+              <span class="badge">Beginner-friendly</span>
+              <span class="badge">Family-focused</span>
+              <span class="badge">High-energy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs">
+      <div class="wrap">
+        <h2>Programs</h2>
+        <p class="muted">Choose your program. We’ll help you get started the right way.</p>
+
+        <div class="cards">
+          <div class="card program">
+            <div class="tag"><i></i> Little Dragons</div>
+            <h3>Ages 3–5</h3>
+            <p>Fun and structured classes that build listening skills, coordination, confidence, and respect.</p>
+          </div>
+
+          <div class="card program">
+            <div class="tag kids"><i></i> Kids Martial Arts</div>
+            <h3>Ages 6–12</h3>
+            <p>Confidence + focus training with goal-setting, discipline, and positive coaching.</p>
+          </div>
+
+          <div class="card program">
+            <div class="tag ta"><i></i> Teens & Adults</div>
+            <h3>Ages 13+</h3>
+            <p>Strength, mindset, and real skills—beginner-friendly and progress-driven.</p>
+          </div>
+
+          <div class="card program">
+            <div class="tag kb"><i></i> Kickboxing</div>
+            <h3>Teens & Adults</h3>
+            <p>High-energy cardio and striking fundamentals—great for fitness and stress relief.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why">
+      <div class="wrap two">
+        <div class="card pad">
+          <h2>Why Martinez Martial Arts</h2>
+          <p class="muted">We focus on skill-building and character—so students grow stronger on the mat and in life.</p>
+
+          <div class="list">
+            <div class="li"><span class="dot"></span><div><b>Clear coaching</b><div class="muted">Step-by-step instruction for real progress.</div></div></div>
+            <div class="li"><span class="dot"></span><div><b>Confidence & discipline</b><div class="muted">Skills that transfer to school, home, and work.</div></div></div>
+            <div class="li"><span class="dot"></span><div><b>Safe, supportive culture</b><div class="muted">Beginner-friendly environment for every age.</div></div></div>
+            <div class="li"><span class="dot"></span><div><b>Fitness & focus</b><div class="muted">Energy, strength, and mental clarity every class.</div></div></div>
+          </div>
+        </div>
+
+        <div id="lead" class="card pad">
+          <h2>Book Your Free Intro Class</h2>
+          <p class="muted" style="margin-top:6px;">Submit the form and we’ll contact you to confirm the best program and time.</p>
+
+          <!-- Netlify Forms -->
+          <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+            <input type="hidden" name="form-name" value="contact" />
+
+            <div class="formRow">
+              <div>
+                <label for="nameLight">Name</label>
+                <input id="nameLight" type="text" name="name" placeholder="Your name" required />
+              </div>
+              <div>
+                <label for="emailLight">Email</label>
+                <input id="emailLight" type="email" name="email" placeholder="you@email.com" required />
+              </div>
+            </div>
+
+            <div class="formRow">
+              <div>
+                <label for="phoneLight">Mobile phone</label>
+                <input id="phoneLight" type="tel" name="phone" placeholder="(904) 555-0123" required />
+              </div>
+              <div>
+                <label for="programLight">Interested in</label>
+                <select id="programLight" name="program" required>
+                  <option value="">Select one…</option>
+                  <option>Little Dragons (Ages 3–5)</option>
+                  <option>Kids (Ages 6–12)</option>
+                  <option>Teens & Adults (Ages 13+)</option>
+                  <option>Kickboxing (Teens & Adults)</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="besttimeLight">Best time to contact</label>
+            <select id="besttimeLight" name="best_time" required>
+              <option value="">Select one…</option>
+              <option>ASAP</option>
+              <option>Afternoons</option>
+              <option>Evenings</option>
+            </select>
+
+            <label for="messageLight">Goals (optional)</label>
+            <textarea id="messageLight" name="message" placeholder="Confidence, focus, fitness, self-defense…"></textarea>
+
+            <div class="formActions">
+              <button class="btn primary" type="submit">Request My Free Intro</button>
+              <a class="btn" href="tel:+19044873016">Call Now</a>
+            </div>
+
+            <div class="hint">4479-5 US 17, Fleming Island, FL • (904) 487-3016</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews">
+      <div class="wrap">
+        <h2>Reviews</h2>
+        <p class="muted">Swap these placeholders with your real Google/Facebook reviews.</p>
+
+        <div class="testimonials">
+          <div class="card quote">
+            <div class="stars">★★★★★</div>
+            <p style="margin:10px 0 0;">“My child’s confidence and focus improved quickly. Great instructors and positive atmosphere.”</p>
+            <div class="who">— Parent</div>
+          </div>
+          <div class="card quote">
+            <div class="stars">★★★★★</div>
+            <p style="margin:10px 0 0;">“Friendly and motivating. The coaching keeps you progressing.”</p>
+            <div class="who">— Adult Student</div>
+          </div>
+          <div class="card quote">
+            <div class="stars">★★★★★</div>
+            <p style="margin:10px 0 0;">“Kickboxing is an awesome workout and fun. Perfect after work.”</p>
+            <div class="who">— Kickboxing Member</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location">
+      <div class="wrap two">
+        <div class="card pad">
+          <h2>Location</h2>
+          <p class="muted" style="margin-bottom:10px;">
+            4479-5 US 17, Fleming Island, FL 32003<br />
+            Phone: <a href="tel:+19044873016" style="text-decoration:underline; font-weight:1000;">(904) 487-3016</a>
+          </p>
+
+          <div class="bar">
+            <a class="btn primary" href="#lead">Free Intro Class</a>
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps?q=4479-5%20US%2017%20Fleming%20Island%20FL%2032003">Get Directions</a>
+          </div>
+
+          <div class="fineprint">Tip: add your business hours + a class schedule section once finalized.</div>
+        </div>
+
+        <div class="card pad">
+          <h2>Map</h2>
+          <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=4479-5%20US%2017%20Fleming%20Island%20FL%2032003&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="yrLight"></span> Martinez Martial Arts • Fleming Island, FL</div>
+      <div class="miniLinks">
+        <a href="#programs">Programs</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#location">Location</a>
+        <a href="tel:+19044873016">(904) 487-3016</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("yrLight").textContent = new Date().getFullYear();
+
+    function prefillZipLight(){
+      const zip = (document.getElementById("zipLight").value || "").trim();
+      if(!zip) return;
+      const msg = document.getElementById("messageLight");
+      if(msg && !msg.value) msg.value = "ZIP Code: " + zip;
+      else if(msg) msg.value = (msg.value + "\nZIP Code: " + zip).trim();
+    }
+  </script>
+</body>
+</html>
