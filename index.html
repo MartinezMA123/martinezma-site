@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Martinez Martial Arts | Fleming Island, FL</title>
+  <meta name="description" content="Martinez Martial Arts in Fleming Island, FL. Little Dragons (3–5), Kids (6–12), Teens & Adults (13+), and Kickboxing for Teens & Adults. Start a FREE trial today." />
+  <meta name="theme-color" content="#0b0b0f" />
+
+  <!-- Basic OG -->
+  <meta property="og:title" content="Martinez Martial Arts | Fleming Island, FL" />
+  <meta property="og:description" content="Start a FREE trial. Programs for ages 3+ through adults, plus kickboxing." />
+  <meta property="og:type" content="website" />
+
+  <!-- LocalBusiness schema -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SportsActivityLocation",
+    "name":"Martinez Martial Arts",
+    "url":"https://www.martinezma.com/",
+    "telephone":"+1-904-487-3016",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"4479-5 US 17",
+      "addressLocality":"Fleming Island",
+      "addressRegion":"FL",
+      "postalCode":"32003",
+      "addressCountry":"US"
+    }
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#0b0b0f;
+      --panel:#12121a;
+      --text:#f6f7fb;
+      --muted:#b9bcc8;
+      --line:rgba(255,255,255,.10);
+      --shadow:0 18px 50px rgba(0,0,0,.45);
+      --radius:18px;
+      --max:1120px;
+
+      --brand:#e11d48;   /* red/pink */
+      --brand2:#60a5fa;  /* blue */
+      --brand3:#22c55e;  /* green */
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0}
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      color:var(--text);
+      background:
+        radial-gradient(1100px 700px at 22% -10%, rgba(225,29,72,.18), transparent 60%),
+        radial-gradient(900px 600px at 90% 15%, rgba(96,165,250,.14), transparent 60%),
+        var(--bg);
+      line-height:1.55;
+    }
+
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px;}
+
+    /* Header / Nav (similar vibe: simple, bold, CTA) */
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter: blur(10px);
+      background:rgba(11,11,15,.72);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0; gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:1000; letter-spacing:.3px;
+      min-width:220px;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:14px;
+      border:1px solid rgba(255,255,255,.12);
+      background:linear-gradient(135deg, rgba(225,29,72,.92), rgba(96,165,250,.70));
+      display:grid; place-items:center;
+      overflow:hidden;
+      box-shadow:0 14px 34px rgba(0,0,0,.35);
+    }
+    .logo img{width:100%; height:100%; object-fit:cover; display:block;} /* placeholder ready */
+    .brand small{
+      display:block; color:var(--muted);
+      font-weight:900; letter-spacing:.7px;
+      font-size:12px; margin-top:2px;
+    }
+
+    .links{display:flex; gap:18px; align-items:center; flex-wrap:wrap;}
+    .links a{color:var(--muted); font-weight:900; font-size:13px}
+    .links a:hover{color:var(--text)}
+
+    .cta{display:flex; gap:10px; align-items:center; flex-wrap:wrap;}
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:1000;
+      cursor:pointer;
+      transition:transform .08s ease, background .15s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform:translateY(-1px); background:rgba(255,255,255,.10)}
+    .btn.primary{
+      border-color:transparent;
+      background:linear-gradient(135deg, var(--brand), #fb7185);
+      box-shadow:0 14px 40px rgba(225,29,72,.25);
+    }
+
+    .pill{
+      display:inline-flex; gap:10px; align-items:center;
+      padding:8px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-weight:900;
+      font-size:13px;
+    }
+
+    /* Cards */
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+    }
+    .pad{padding:18px;}
+
+    /* Hero (headline + “Start a FREE Trial” form block like nlmartialarts style) */
+    .hero{padding:48px 0 18px;}
+    .grid{display:grid; grid-template-columns:1.15fr .85fr; gap:16px; align-items:start;}
+    h1{
+      margin:14px 0 10px;
+      font-size:44px; line-height:1.05;
+      letter-spacing:-.9px;
+      text-transform:uppercase;
+    }
+    .sub{
+      margin:0 0 14px;
+      font-size:18px;
+      color:var(--muted);
+      line-height:1.65;
+    }
+    .bar{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+
+    .heroMedia{
+      position:relative;
+      overflow:hidden;
+      min-height:520px; /* big hero image */
+      border-radius:var(--radius);
+    }
+    .heroMedia img{width:100%; height:100%; object-fit:cover; display:block; filter:saturate(1.05) contrast(1.05);}
+    .overlay{
+      position:absolute; inset:0;
+      background:linear-gradient(180deg, rgba(11,11,15,.08), rgba(11,11,15,.90));
+    }
+    .heroBadges{
+      position:absolute;
+      left:14px; bottom:14px;
+      display:flex; gap:10px; flex-wrap:wrap;
+      z-index:2;
+    }
+
+    /* Form styles (Netlify) */
+    form label{display:block; font-size:13px; color:var(--muted); margin:10px 0 6px; font-weight:1000;}
+    form input, form select, form textarea{
+      width:100%;
+      padding:12px 12px;
+      border-radius:12px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.25);
+      color:var(--text);
+      outline:none;
+      font-weight:800;
+    }
+    form textarea{resize:vertical; min-height:92px;}
+    .formRow{display:grid; grid-template-columns:1fr 1fr; gap:10px;}
+    .formActions{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px;}
+    .hint{margin-top:10px; font-size:13px; color:var(--muted);}
+
+    section{padding:30px 0;}
+    h2{margin:0 0 10px; font-size:28px; letter-spacing:-.3px;}
+    .muted{color:var(--muted);}
+
+    /* Offer / Benefits (icon grid like nlmartialarts) */
+    .benefits{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:14px;}
+    .benefit{padding:16px;}
+    .benefit h3{margin:10px 0 6px; font-size:16px}
+    .benefit p{margin:0; color:var(--muted); font-size:14px; line-height:1.55;}
+    .icon{
+      width:44px; height:44px; border-radius:14px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      display:grid; place-items:center;
+      font-weight:1000;
+    }
+
+    /* Programs */
+    .programs{display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:14px;}
+    .program{padding:16px;}
+    .tag{display:inline-flex; gap:8px; align-items:center; font-weight:1000; font-size:13px;}
+    .tag i{width:10px; height:10px; border-radius:999px; display:inline-block; background:var(--brand); box-shadow:0 0 0 3px rgba(225,29,72,.20);}
+    .tag.kids i{background:var(--brand3); box-shadow:0 0 0 3px rgba(34,197,94,.20);}
+    .tag.ta i{background:var(--brand2); box-shadow:0 0 0 3px rgba(96,165,250,.20);}
+    .tag.kb i{background:#f59e0b; box-shadow:0 0 0 3px rgba(245,158,11,.22);}
+    .program h3{margin:10px 0 6px; font-size:16px}
+    .program p{margin:0; color:var(--muted); font-size:14px; line-height:1.55;}
+
+    /* Testimonials */
+    .testimonials{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:14px;}
+    .quote{padding:16px;}
+    .stars{letter-spacing:1px; font-weight:1000;}
+    .who{margin-top:10px; color:var(--muted); font-weight:1000; font-size:13px;}
+
+    /* FAQ accordion */
+    .faq{margin-top:12px; display:grid; gap:10px;}
+    details{
+      border:1px solid var(--line);
+      border-radius:14px;
+      background:rgba(255,255,255,.03);
+      padding:12px 12px;
+    }
+    summary{
+      cursor:pointer;
+      list-style:none;
+      font-weight:1000;
+    }
+    summary::-webkit-details-marker{display:none}
+    details p{margin:10px 0 0; color:var(--muted); line-height:1.6;}
+
+    /* Big CTA (Try classes for a week, no risk) */
+    .bigCta{
+      padding:22px;
+      background:
+        radial-gradient(700px 260px at 10% 0%, rgba(225,29,72,.22), transparent 60%),
+        radial-gradient(700px 260px at 90% 0%, rgba(96,165,250,.18), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;
+    }
+    .bigCta h2{margin:0; font-size:26px}
+    .bigCta .muted{margin:6px 0 0}
+
+    /* Location */
+    .two{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px;}
+    .map{border:0; width:100%; height:320px; border-radius:var(--radius);}
+
+    footer{
+      border-top:1px solid var(--line);
+      padding:22px 0;
+      color:var(--muted);
+    }
+    .foot{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;}
+    .miniLinks{display:flex; gap:14px; flex-wrap:wrap;}
+    .miniLinks a{color:var(--muted); font-weight:1000; font-size:13px;}
+    .miniLinks a:hover{color:var(--text)}
+
+    /* Responsive */
+    .mobileOnly{display:none}
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr;}
+      .heroMedia{min-height:320px;}
+      .benefits{grid-template-columns:1fr;}
+      .programs{grid-template-columns:1fr 1fr;}
+      .testimonials{grid-template-columns:1fr;}
+      .two{grid-template-columns:1fr;}
+      h1{font-size:36px;}
+      .links{display:none;}
+      .mobileOnly{display:inline-flex;}
+    }
+    @media (max-width: 520px){
+      .programs{grid-template-columns:1fr;}
+      .formRow{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="Martinez Martial Arts home">
+          <div class="logo" aria-hidden="true">
+            <!-- PLACEHOLDER LOGO IMAGE (replace with your own) -->
+            <img src="https://via.placeholder.com/300x300.png?text=LOGO" alt="Martinez Martial Arts logo placeholder">
+          </div>
+          <div>
+            <div style="font-size:14px;">MARTINEZ MARTIAL ARTS</div>
+            <small>FLEMING ISLAND, FL</small>
+          </div>
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="#academy">Our Academy</a>
+          <a href="#programs">Our Programs</a>
+          <a href="#events">Upcoming Events</a>
+          <a href="#contact">Contact Us</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn mobileOnly" href="tel:+19044873016">Call</a>
+          <a class="btn primary" href="#lead">Free Trial</a>
+          <a class="btn" href="tel:+19044873016">(904) 487-3016</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="grid">
+          <div>
+            <span class="pill">📍 Fleming Island, FL • 4479-5 US 17 • (904) 487-3016</span>
+
+            <h1>FLEMING ISLAND'S #1 MARTIAL ARTS STUDIO</h1>
+            <p class="sub">
+              Whether you’re brand new to martial arts or have experience, join today and start your journey.
+              Programs for Little Dragons (3–5), Kids (6–12), Teens & Adults (13+), plus Kickboxing.
+            </p>
+
+            <div class="bar">
+              <a class="btn primary" href="#lead">Start a FREE Trial</a>
+              <a class="btn" href="#programs">See Programs</a>
+              <a class="btn" href="tel:+19044873016">Call (904) 487-3016</a>
+            </div>
+
+            <!-- Form block similar placement -->
+            <div id="lead" class="card pad" style="margin-top:16px;">
+              <h2 style="margin:0 0 6px;">Start a FREE Trial</h2>
+              <p class="muted" style="margin:0 0 6px;">Fill out the form and we’ll contact you to confirm your best class time.</p>
+
+              <!-- NETLIFY FORMS -->
+              <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
+                <input type="hidden" name="form-name" value="contact" />
+                <p style="display:none;">
+                  <label>Don’t fill this out: <input name="bot-field" /></label>
+                </p>
+
+                <div class="formRow">
+                  <div>
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" required />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@email.com" required />
+                  </div>
+                </div>
+
+                <div class="formRow">
+                  <div>
+                    <label for="phone">Mobile phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(904) 555-0123" required />
+                  </div>
+                  <div>
+                    <label for="program">Interested in</label>
+                    <select id="program" name="program" required>
+                      <option value="">Select one…</option>
+                      <option>Little Dragons (Ages 3–5)</option>
+                      <option>Kids Martial Arts (Ages 6–12)</option>
+                      <option>Teens & Adults Martial Arts (Ages 13+)</option>
+                      <option>Kickboxing (Teens & Adults)</option>
+                      <option>Not sure yet</option>
+                    </select>
+                  </div>
+                </div>
+
+                <label for="best_time">Best time to contact</label>
+                <select id="best_time" name="best_time" required>
+                  <option value="">Select one…</option>
+                  <option>ASAP</option>
+                  <option>Afternoons</option>
+                  <option>Evenings</option>
+                </select>
+
+                <label for="message">Goals (optional)</label>
+                <textarea id="message" name="message" placeholder="Confidence, focus, fitness, self-defense, kickboxing…"></textarea>
+
+                <div class="formActions">
+                  <button class="btn primary" type="submit">Let’s Get Started</button>
+                  <a class="btn" href="tel:+19044873016">Call Now</a>
+                </div>
+
+                <div class="hint">No risk. No pressure. Come try a class and tour the academy.</div>
+              </form>
+            </div>
+          </div>
+
+          <div class="card heroMedia" aria-label="Hero image">
+            <!-- PLACEHOLDER HERO IMAGE (replace with your own) -->
+            <img src="https://via.placeholder.com/1400x1000.png?text=HERO+IMAGE" alt="Martinez Martial Arts hero image placeholder" />
+            <div class="overlay"></div>
+            <div class="heroBadges">
+              <span class="pill">Beginner-friendly</span>
+              <span class="pill">Family-focused</span>
+              <span class="pill">High-energy</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Academy -->
+    <section id="academy">
+      <div class="wrap">
+        <h2>Martial Arts Discipline & Character-Inspired Program</h2>
+        <p class="muted">
+          Our program is designed to help students develop discipline, respect, and strong character
+          in a structured environment that supports personal growth and physical fitness.
+        </p>
+
+        <div class="benefits">
+          <div class="card benefit">
+            <div class="icon">💪</div>
+            <h3>Physical Fitness</h3>
+            <p>Boost strength, flexibility, and endurance through dynamic training.</p>
+          </div>
+          <div class="card benefit">
+            <div class="icon">🧠</div>
+            <h3>Mental Focus</h3>
+            <p>Sharpen concentration and self-control with consistent practice.</p>
+          </div>
+          <div class="card benefit">
+            <div class="icon">🏆</div>
+            <h3>Confidence Boost</h3>
+            <p>Gain confidence as you master skills and reach new milestones.</p>
+          </div>
+          <div class="card benefit">
+            <div class="icon">🤝</div>
+            <h3>Community Support</h3>
+            <p>Train with encouraging coaches and a positive team culture.</p>
+          </div>
+          <div class="card benefit">
+            <div class="icon">🛡️</div>
+            <h3>Self-Defense Skills</h3>
+            <p>Learn essential techniques to protect yourself and your loved ones.</p>
+          </div>
+          <div class="card benefit">
+            <div class="icon">📈</div>
+            <h3>Personal Growth</h3>
+            <p>Build discipline, responsibility, and leadership—on and off the mat.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs -->
+    <section id="programs">
+      <div class="wrap">
+        <h2>Our Programs</h2>
+        <p class="muted">Programs for every age and goal—start with a free trial and we’ll guide you from day one.</p>
+
+        <div class="programs">
+          <div class="card program">
+            <div class="tag"><i></i> Little Dragons</div>
+            <h3>Ages 3–5</h3>
+            <p>Fun, structured classes that build coordination, listening skills, and confidence.</p>
+          </div>
+
+          <div class="card program">
+            <div class="tag kids"><i></i> Kids Program</div>
+            <h3>Ages 6–12</h3>
+            <p>Confidence + focus training with goal-setting, discipline, and positive coaching.</p>
+          </div>
+
+          <div class="card program">
+            <div class="tag ta"><i></i> Teens & Adults</div>
+            <h3>Ages 13+</h3>
+            <p>Build real skills, mindset, and fitness in a beginner-friendly environment.</p>
+          </div>
+
+          <div class="card program">
+            <div class="tag kb"><i></i> Kickboxing</div>
+            <h3>Teens & Adults</h3>
+            <p>High-energy cardio + technique. Great for fitness, stress relief, and confidence.</p>
+          </div>
+        </div>
+
+        <div class="bar" style="margin-top:16px;">
+          <a class="btn primary" href="#lead">Start Free Trial</a>
+          <a class="btn" href="tel:+19044873016">Call (904) 487-3016</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming Events (placeholder section to mirror site navigation) -->
+    <section id="events">
+      <div class="wrap">
+        <h2>Upcoming Events</h2>
+        <p class="muted">Add your events here (belt tests, tournaments, camps, special seminars).</p>
+
+        <div class="card pad">
+          <div style="display:grid; gap:10px;">
+            <div class="card pad" style="box-shadow:none;">
+              <b>Event Placeholder #1</b>
+              <div class="muted">Date • Time • Short description • Call to action</div>
+            </div>
+            <div class="card pad" style="box-shadow:none;">
+              <b>Event Placeholder #2</b>
+              <div class="muted">Date • Time • Short description • Call to action</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews">
+      <div class="wrap">
+        <h2>What Real Customers Are Saying</h2>
+        <p class="muted">Replace these with your real Google/Facebook reviews for the highest conversion.</p>
+
+        <div class="testimonials">
+          <div class="card quote">
+            <div class="stars">★★★★★</div>
+            <p style="margin:10px 0 0;">“Family oriented and welcoming. Great instructors and a positive environment.”</p>
+            <div class="who">— Parent (placeholder)</div>
+          </div>
+
+          <div class="card quote">
+            <div class="stars">★★★★★</div>
+            <p style="margin:10px 0 0;">“My child is gaining confidence and self-esteem. We love the community.”</p>
+            <div class="who">— Parent (placeholder)</div>
+          </div>
+
+          <div class="card quote">
+            <div class="stars">★★★★★</div>
+            <p style="margin:10px 0 0;">“Great for teens and adults—real skills and a supportive coach.”</p>
+            <div class="who">— Student (placeholder)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq">
+          <details>
+            <summary>What age groups do you offer classes for?</summary>
+            <p>We offer Little Dragons (ages 3–5), Kids (ages 6–12), Teens & Adults (13+), plus Kickboxing for Teens & Adults.</p>
+          </details>
+          <details>
+            <summary>Do I need prior martial arts experience to join?</summary>
+            <p>No. Our classes are beginner-friendly and we’ll guide you step-by-step.</p>
+          </details>
+          <details>
+            <summary>What should I wear to my first class?</summary>
+            <p>Comfortable athletic clothing is perfect for your trial. If you join, we’ll guide you on uniforms and gear.</p>
+          </details>
+          <details>
+            <summary>How often should I attend classes to see progress?</summary>
+            <p>Most students see steady progress with 2–3 classes per week, but consistency is the key.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Big CTA -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="bigCta">
+          <div>
+            <div class="pill">Try classes for a week</div>
+            <h2>No Risk. No Pressure. <span style="color:#fb7185;">For Free.</span></h2>
+            <p class="muted" style="max-width:680px;">
+              Come see the academy, meet the coaches, and try the program that fits your age group and goals.
+            </p>
+          </div>
+          <div class="bar" style="margin:0;">
+            <a class="btn primary" href="#lead">Sign Up Now</a>
+            <a class="btn" href="tel:+19044873016">Call (904) 487-3016</a>
+          </div>
+        </div>
+
+        <div class="two" style="margin-top:14px;">
+          <div class="card pad">
+            <h2>Location</h2>
+            <p class="muted" style="margin-bottom:10px;">
+              4479-5 US 17, Fleming Island, FL 32003<br />
+              Phone: <a href="tel:+19044873016" style="text-decoration:underline; font-weight:1000;">(904) 487-3016</a>
+            </p>
+
+            <!-- Placeholder "partner/association" logos row (like footer badges) -->
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+              <img src="https://via.placeholder.com/160x60.png?text=Badge+Logo" alt="Badge placeholder" style="border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.03);" />
+              <img src="https://via.placeholder.com/160x60.png?text=Association" alt="Association placeholder" style="border-radius:12px; border:1px solid var(--line); background:rgba(255,255,255,.03);" />
+            </div>
+          </div>
+
+          <div class="card pad">
+            <h2>Map</h2>
+            <iframe class="map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=4479-5%20US%2017%20Fleming%20Island%20FL%2032003&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="yr"></span> Martinez Martial Arts • Fleming Island, FL</div>
+      <div class="miniLinks">
+        <a href="#academy">Our Academy</a>
+        <a href="#programs">Programs</a>
+        <a href="#events">Events</a>
+        <a href="#faq">FAQ</a>
+        <a href="tel:+19044873016">(904) 487-3016</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
